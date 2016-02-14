@@ -16,6 +16,7 @@ public class SnowDayChance extends Activity {
 	private float snowDayChance;
 	private TextView snowDayChancePrint;
 	private Button menuButton;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

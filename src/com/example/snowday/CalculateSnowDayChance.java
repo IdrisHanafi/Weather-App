@@ -17,7 +17,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
-
 public class CalculateSnowDayChance extends Activity {
 	
 	public final static String SnowDayChanceMessage = "com.example.CalcuateSnowDayChance.MESSAGE";

@@ -1,5 +1,6 @@
 /*
- * Snow Day Calculator by Hope Ludlow
+ * Snow Day Calculator by Idris
+ * and the others
  */
 package com.example.snowday;
 
