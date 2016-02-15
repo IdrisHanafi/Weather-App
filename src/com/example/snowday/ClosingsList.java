@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 public class ClosingsList extends Activity {
 
+	//Set Global Variables
+	
 	private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7, checkBox8, checkBox9, checkBox10;
 	private Button prevButton, nextButton,  subscribeButton, searchButton, menuButton, viewSubsButton;
 	private TextView status1, status2, status3, status4, status5;
@@ -94,15 +96,9 @@ public class ClosingsList extends Activity {
 		 status3.setText(schoolArray[2][1]);
 		 status4.setText(schoolArray[3][1]);
 		 status5.setText(schoolArray[4][1]);
+		  
 		 
-		 
-		 
-         
-         
-         
-         
-         
-         
+         // Idris algorithm to list all values from the website
          
 		/*String URL = "file:///C:/Users/Dan/Documents/College/CS%20290%20-%20Human%20and%20Computer%20Interaction/E%253a%255cCS290HumanComputerInteraction%255cConnecticut%20School%20Closings%20and%20Delays%20-%20WFSB%203%20Connecticut.htm", search = "<tr><td>";
         int counter = 0;

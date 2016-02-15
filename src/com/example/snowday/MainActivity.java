@@ -14,6 +14,7 @@ import android.content.Intent;
 
 public class MainActivity extends Activity {
 	
+	// Global Variables
 	private Button calculateButton, closingsButton;
 	
 	@Override
@@ -26,12 +27,12 @@ public class MainActivity extends Activity {
 		
 		closingsButton = (Button)findViewById(R.id.ClosingsButton);
 		closingsButton.setOnClickListener(ClosingsButtonListener);
-	
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		// Inflate the menu
+		// This will add items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
