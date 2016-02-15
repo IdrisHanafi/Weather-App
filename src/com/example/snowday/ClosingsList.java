@@ -22,7 +22,6 @@ import android.widget.TextView;
 public class ClosingsList extends Activity {
 
 	//Set Global Variables
-	
 	private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7, checkBox8, checkBox9, checkBox10;
 	private Button prevButton, nextButton,  subscribeButton, searchButton, menuButton, viewSubsButton;
 	private TextView status1, status2, status3, status4, status5;
@@ -36,12 +35,14 @@ public class ClosingsList extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_closings_list);
 		
+		// Check boxes initializations
 		checkBox1 = (CheckBox)findViewById(R.id.checkBox1);
 		checkBox2 = (CheckBox)findViewById(R.id.checkBox2);
 		checkBox3 = (CheckBox)findViewById(R.id.checkBox3);
 		checkBox4 = (CheckBox)findViewById(R.id.checkBox4);
 		checkBox5 = (CheckBox)findViewById(R.id.checkBox5);
 		
+		// Text View initializations
 		status1 = (TextView)findViewById(R.id.status1);
 		status2 = (TextView)findViewById(R.id.status2);
 		status3 = (TextView)findViewById(R.id.status3);
@@ -306,8 +307,7 @@ public class ClosingsList extends Activity {
 				j--;
 			
 			}
-		}
-		 
+		} 
 	 };
 	 
 	 private OnClickListener MenuButtonListener = new OnClickListener(){
@@ -517,16 +517,11 @@ public class ClosingsList extends Activity {
 			}
 			 
 		 };
-	
-	 
-	 
+ 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.closings_list, menu);
 		return true;
 	}
-	
-	
-
 }

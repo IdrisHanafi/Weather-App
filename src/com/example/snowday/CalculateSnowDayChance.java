@@ -92,7 +92,7 @@ public class CalculateSnowDayChance extends Activity {
 		
 	}
 	
-	// Formula to calculate chance of snowday
+	// Formula to calculate chance of snow day app
 	private OnClickListener CalcPercentageButtonListener = new OnClickListener(){
 		
 		public void onClick(View v){
@@ -104,10 +104,10 @@ public class CalculateSnowDayChance extends Activity {
 			String weekDay = weekDaySpinner.getSelectedItem().toString();
 			
 			try{
-			previousSnowDays = Integer.parseInt(previousSnowDaysText.getText().toString());
-			stormStartTime = Integer.parseInt(stormStartTimeText.getText().toString());
-			stormStopTime = Integer.parseInt(stormStopTimeText.getText().toString());
-			inchesOfSnow = Integer.parseInt(inchesOfSnowText.getText().toString());
+				previousSnowDays = Integer.parseInt(previousSnowDaysText.getText().toString());
+				stormStartTime = Integer.parseInt(stormStartTimeText.getText().toString());
+				stormStopTime = Integer.parseInt(stormStopTimeText.getText().toString());
+				inchesOfSnow = Integer.parseInt(inchesOfSnowText.getText().toString());
 			}
 					
 			catch(Exception e){Log.v("Error", "Non-numeric input detected!");}
@@ -146,5 +146,4 @@ public class CalculateSnowDayChance extends Activity {
 			startActivity(intent);
 		}
 	};
-
 }

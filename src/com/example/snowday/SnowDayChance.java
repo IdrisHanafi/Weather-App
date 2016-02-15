@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
-import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -37,15 +37,13 @@ public class SnowDayChance extends Activity {
 		else{snowDayChancePrint.setText((snowDayChance) + " %");}
 	}
 	
-	 private OnClickListener MenuButtonListener = new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-				startActivity(intent);
-			}
-			 
-		 };
+	private OnClickListener MenuButtonListener = new OnClickListener() {
+		@Override
+		public void onClick(View arg0) {
+			Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+			startActivity(intent);
+		}		 
+	};
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -54,5 +52,4 @@ public class SnowDayChance extends Activity {
 		getMenuInflater().inflate(R.menu.snow_day_chance, menu);
 		return true;
 	}
-
 }
