@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class SnowDayChance extends Activity {
 	
+	// Set global variables
 	private float snowDayChance;
 	private TextView snowDayChancePrint;
 	private Button menuButton;
@@ -48,7 +49,8 @@ public class SnowDayChance extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		// Inflate the menu
+		// This will add items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.snow_day_chance, menu);
 		return true;
 	}

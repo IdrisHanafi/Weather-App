@@ -18,7 +18,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 public class CalculateSnowDayChance extends Activity {
-	
+
+	// Global Variables
 	public final static String SnowDayChanceMessage = "com.example.CalcuateSnowDayChance.MESSAGE";
 	private Spinner monthSpinner, weekDaySpinner ;
 	private EditText previousSnowDaysText, stormStartTimeText, stormStopTimeText, inchesOfSnowText;
@@ -44,7 +45,6 @@ public class CalculateSnowDayChance extends Activity {
 		
 		calcPercentage = (Button)findViewById(R.id.calcPercentage);
 		calcPercentage.setOnClickListener(CalcPercentageButtonListener);
-		
 		
 		List<String> monthList = new ArrayList<String>();
 		
@@ -92,6 +92,7 @@ public class CalculateSnowDayChance extends Activity {
 		
 	}
 	
+	// Formula to calculate chance of snowday
 	private OnClickListener CalcPercentageButtonListener = new OnClickListener(){
 		
 		public void onClick(View v){
